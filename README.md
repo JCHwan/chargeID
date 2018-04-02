@@ -2,7 +2,7 @@
   This codes are for charge separation in 3DST
 
 # Main code
-  'ND280UpRecoTrack.cc' and 'main_electron2.cc' are main codes and them should be run after Transfer_grid.C.
+  'ND280UpRecoTrack.cc' and 'main_electron2.cc' are main codes and they should be run after Transfer_grid.C.
   Charge separation algorithm is in 'void ND280UpPID::ChargeID(Tgraph g)'.
   The function works well with the below condition.
   
