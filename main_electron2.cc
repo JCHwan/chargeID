@@ -201,7 +201,7 @@ int main(int argc, char* argv[])
   TH1D* t_contain = new TH1D("t_contain","t_contain", 100,0,1);
 
     TH1F * hChargeID = new TH1F("hChargeID", "hChargeID", 3, -1.5, 1.5);
-    TH1F * hRadiusID = new TH1F("hRadiusID", "hRadiusID", 100, 0., 30000.);
+    TH1F * hRadiusID = new TH1F("hRadiusID", "hRadiusID", 100, 0., 50000.);
     TH1F * hCenterYID = new TH1F("hCenterYID", "hCenterYID", 100, -15000., 15000.);
     TH1F * hCenterZID = new TH1F("hCenterZID", "hCenterZID", 100, -15000., 15000.);
     TH1F * hChi2_NDF  = new TH1F("hChi2_NDF" , "hCHi2_NDF ", 100, 0, 800);
@@ -924,7 +924,7 @@ int main(int argc, char* argv[])
   hMuon_CosTh_RecMinTr_orig->Write("reco-true_cos_orig");
   hMuon_Mom_RecMinTr->Write("reco-true_mom");
   h_contain->Write("h_contain");
-  hMuon_TrMomVsTrCosTh->Write("hMuon_TrMomVsTrCosTh");
+v  hMuon_TrMomVsTrCosTh->Write("hMuon_TrMomVsTrCosTh");
   hPion_TrMomVsTrCosTh->Write("hPion_TrMomVsTrCosTh");
   hProt_TrMomVsTrCosTh->Write("hProt_TrMomVsTrCosTh");
   hMuon_TrMom->Write("hMuon_TrMom");
