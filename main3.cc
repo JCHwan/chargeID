@@ -29,7 +29,7 @@
 
 
 //int main(int argc, char* argv[])
-void main3()
+void main3(string name)
 {
   TG4Event * g4event = NULL;
   TChain * chain = new TChain("EDepSimEvents");
@@ -71,7 +71,7 @@ void main3()
   for(int i = 0; i < nevent; i++){
     if((i+1)%(nevent/10) == 0)
       cout<<i+1<<"th event run"<<endl;
-    chain->GetEntry(i);
+        chain->GetEntry(i);
     double length = 0;
     nPoint = 0;
     bool l1 = false, l2 = false, l3 = false, l4 = false, l5 = false;
@@ -159,7 +159,25 @@ void main3()
   hRadius500->Write("hRadius500");
   hChi2_NDF500->Write("hChi2_NDF500");
   hLength500->Write("hLength500");
-  
-  //  return 0;
+
+  hCharge1000->Write("hCharge1000");
+  hRadius1000->Write("hRadius1000");
+  hChi2_NDF1000->Write("hChi2_NDF1000");
+  hLength1000->Write("hLength1000");
+
+  hCharge1500->Write("hCharge1500");
+  hRadius1500->Write("hRadius1500");
+  hChi2_NDF1500->Write("hChi2_NDF1500");
+  hLength1500->Write("hLength1500");
+
+  hCharge2000->Write("hCharge2000");
+  hRadius2000->Write("hRadius2000");
+  hChi2_NDF2000->Write("hChi2_NDF2000");
+  hLength2000->Write("hLength2000");
+
+  hCharge2500->Write("hCharge2500");
+  hRadius2500->Write("hRadius2500");
+  hChi2_NDF2500->Write("hChi2_NDF2500");
+  hLength2500->Write("hLength2500");
 }
 

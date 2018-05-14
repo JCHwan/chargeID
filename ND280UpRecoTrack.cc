@@ -1497,7 +1497,7 @@ void ND280UpPID::ChargeID(TGraph g){
   TH1D hCentYY("hCentYY", "hCentYY", 1000, -120000, 120000);
   TH1D hCentZZ("hCentZZ", "hCentZZ", 1000, -80000 , 80000);
  
-  cout<<"nPoint: "<<g.GetN();
+  //cout<<"nPoint: "<<g.GetN();
  
   for(int i = 0; 2*i < g.GetN(); i++){
     if( (i % 3) == 0){
