@@ -109,7 +109,7 @@ int main(int argc, char* argv[])
 	  }
 	  else if (!l2 && length > 1000){
 	    ND280UpPID nd280UpPID;
-	    nd280UpPID.ChargeID(gYZ);
+	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge1000->Fill(nd280UpPID.GetChargeID());
 	    hRadius1000->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF1000->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
 	  }
 	  else if (!l3 && length > 1500){
 	    ND280UpPID nd280UpPID;
-	    nd280UpPID.ChargeID(gYZ);
+	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge1500->Fill(nd280UpPID.GetChargeID());
 	    hRadius1500->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF1500->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
@@ -125,7 +125,7 @@ int main(int argc, char* argv[])
 	  }
 	  else if (!l4 && length > 2000){
 	    ND280UpPID nd280UpPID;
-	    nd280UpPID.ChargeID(gYZ);
+	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge2000->Fill(nd280UpPID.GetChargeID());
 	    hRadius2000->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF2000->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
@@ -133,7 +133,7 @@ int main(int argc, char* argv[])
 	  }
 	  else if (!l5 && length > 2500){
 	    ND280UpPID nd280UpPID;
-	    nd280UpPID.ChargeID(gYZ);
+	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge2500->Fill(nd280UpPID.GetChargeID());
 	    hRadius2500->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF2500->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
