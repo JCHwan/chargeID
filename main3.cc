@@ -107,6 +107,7 @@ void main3()
 	    hRadius500->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF500->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
 	    hLength500->Fill(length);
+	    l1 = true;
 	  }
 	  else if (!l2 && length > 1000){
 	    ND280UpPID nd280UpPID;
@@ -115,6 +116,7 @@ void main3()
 	    hRadius1000->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF1000->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
 	    hLength1000->Fill(length);
+	    l2 = true;
 	  }
 	  else if (!l3 && length > 1500){
 	    ND280UpPID nd280UpPID;
@@ -123,6 +125,7 @@ void main3()
 	    hRadius1500->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF1500->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
 	    hLength1500->Fill(length);
+	    l3 = true;
 	  }
 	  else if (!l4 && length > 2000){
 	    ND280UpPID nd280UpPID;
@@ -131,6 +134,7 @@ void main3()
 	    hRadius2000->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF2000->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
 	    hLength2000->Fill(length);
+	    l4 = true;
 	  }
 	  else if (!l5 && length > 2500){
 	    ND280UpPID nd280UpPID;
@@ -139,6 +143,7 @@ void main3()
 	    hRadius2500->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF2500->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
 	    hLength2500->Fill(length);
+	    l5 = true;
 	  }
 
 
