@@ -16,7 +16,7 @@
 #include <iostream>
 #include <fstream>
 #include <TChain.h>
-
+#include <TString.h>
 
 //#include "ND280UpConst.hh"
 #include "ND280UpRecoTrack.cc"
@@ -29,11 +29,11 @@
 
 
 //int main(int argc, char* argv[])
-void main3(string name)
+void main3(char* inputname)
 {
   TG4Event * g4event = NULL;
   TChain * chain = new TChain("EDepSimEvents");
-  chain->Add("../data/test.root");
+  chain->Add(Form("/pnfs/dune/persistent/users/chjang/data/%s.root", inputname));
   chain->SetBranchAddress("Event", &g4event);
 
   TH1D * hCharge500 = new TH1D("hCharge500", "hCharge500", 3, -1.5, 1.5);
@@ -154,7 +154,7 @@ void main3(string name)
     }
   }
   
-  TFile file("result.root", "recreate");
+  TFile file(Form("../data/result_%s.root", inputname), "recreate");
   hCharge500->Write("hCharge500");
   hRadius500->Write("hRadius500");
   hChi2_NDF500->Write("hChi2_NDF500");
