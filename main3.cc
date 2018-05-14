@@ -18,8 +18,8 @@
 #include <TChain.h>
 
 
-#include "/nashome/c/chjang/duneND/ND280/ND280UpConst.hh"
-#include "/nashome/c/chjang/duneND/ND280/ND280UpRecoTrack.hh"
+//#include "ND280UpConst.hh"
+#include "ND280UpRecoTrack.cc"
 
 #include "/nashome/c/chjang/edep-sim/src/TG4Event.h"
 //#include "~/edep-sim/src/TG4Event.h"
@@ -33,7 +33,7 @@ void main3()
 {
   TG4Event * g4event = NULL;
   TChain * chain = new TChain("EDepSimEvents");
-  chain->Add("../3dst_test.root");
+  chain->Add("../data/test.root");
   chain->SetBranchAddress("Event", &g4event);
 
   TH1D * hCharge500 = new TH1D("hCharge500", "hCharge500", 3, -1.5, 1.5);
@@ -147,7 +147,7 @@ void main3()
     }
   }
 
-  TFile file("test.root");
+  TFile file("test.root", "recreate");
   hCharge500->Write("hCharge500");
   hRadius500->Write("hRadius500");
   hChi2_NDF500->Write("hChi2_NDF500");
