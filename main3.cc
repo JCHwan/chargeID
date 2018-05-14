@@ -62,23 +62,24 @@ void main3()
 
   
   TGraph * gYZ = new TGraph();
-
-  double hitLocations[3] = {0, 0, 0};
-
-  int nPoint = 0;
   
-
+  double hitLocations[3] = {0, 0, 0};
+  
+  int nPoint = 0;  
   int nevent = chain->GetEntries();
   cout<<"nevent = "<<nevent<<endl;
   for(int i = 0; i < nevent; i++){
     if((i+1)%(nevent/10) == 0)
       cout<<i+1<<"th event run"<<endl;
+    chain->GetEntry(i);
     double length = 0;
     nPoint = 0;
     bool l1 = false, l2 = false, l3 = false, l4 = false, l5 = false;
     for(auto sg : g4event->SegmentDetectors){
+      //cout<<"aa"<<endl;
       for(int ii = 0; ii < sg.second.size();ii++){
 	length+=sg.second[ii].TrackLength;
+	//cout<<length<<endl;
 	if(sg.second[ii].TrackLength>=1){//&& sg.second[ii].EnergyDeposit >= 1.){
 	  
 	  int aveX= ((sg.second[ii].Stop.X()+sg.second[ii].Start.X())/2. +1000)/10 ;
@@ -145,19 +146,20 @@ void main3()
 	    hLength2500->Fill(length);
 	    l5 = true;
 	  }
-
-
+	  
+	  
 	}
       }
+      //    cout<<"aa"<<endl; 
     }
   }
-
-  TFile file("test.root", "recreate");
+  
+  TFile file("result.root", "recreate");
   hCharge500->Write("hCharge500");
   hRadius500->Write("hRadius500");
   hChi2_NDF500->Write("hChi2_NDF500");
   hLength500->Write("hLength500");
-
+  
   //  return 0;
 }
 
