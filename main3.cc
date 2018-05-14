@@ -60,7 +60,11 @@ int main(int argc, char* argv[])
   TH1D * hLength2500 = new TH1D("hLength2500", "hLength2500", 100, 0, 4000);
 
   
-  TGraph * gYZ = new TGraph;
+  TGraph * gYZ = new TGraph();
+
+  double hitLocations[3] = {0, 0, 0};
+
+  int nPoint = 0;
   
 
   int nevent = chain->GetEntries();
@@ -69,6 +73,7 @@ int main(int argc, char* argv[])
     if((i+1)%(nevent/10) == 0)
       cout<<i+1<<"th event run"<<endl;
     double length = 0;
+    nPoint = 0;
     bool l1 = false, l2 = false, l3 = false, l4 = false, l5 = false;
     for(auto sg : g4event->SegmentDetectors){
       for(int ii = 0; ii < sg.second.size();ii++){
@@ -145,7 +150,7 @@ int main(int argc, char* argv[])
   hCharge500->Write("hCharge500");
   hRadius500->Write("hRadius500");
   hChi2_NDF500->Write("hChi2_NDF500");
-  hLength500->write("hLength500");
+  hLength500->Write("hLength500");
 
   return 0;
 }
