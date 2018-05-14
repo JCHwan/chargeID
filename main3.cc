@@ -144,5 +144,7 @@ int main(int argc, char* argv[])
   hRadius500->Write("hRadius500");
   hChi2_NDF500->Write("hChi2_NDF500");
   hLength500->write("hLength500");
+
+  return 0;
 }
 
