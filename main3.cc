@@ -28,7 +28,8 @@
 //#include "ND280UpRecoTrack.hh"
 
 
-int main(int argc, char* argv[])
+//int main(int argc, char* argv[])
+void main3()
 {
   TG4Event * g4event = NULL;
   TChain * chain = new TChain("EDepSimEvents");
@@ -152,6 +153,6 @@ int main(int argc, char* argv[])
   hChi2_NDF500->Write("hChi2_NDF500");
   hLength500->Write("hLength500");
 
-  return 0;
+  //  return 0;
 }
 
