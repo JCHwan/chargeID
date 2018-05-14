@@ -101,7 +101,7 @@ int main(int argc, char* argv[])
 	  nPoint++;
 	  if (!l1 && length > 500){
 	    ND280UpPID nd280UpPID;
-	    nd280UpPID.ChargeID(gYZ);
+	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge500->Fill(nd280UpPID.GetChargeID());
 	    hRadius500->Fill(nd280UpPID.GetRadiusID());
 	    hChi2_NDF500->Fill(nd280UpPID.GetChi2()/nd280UpPID.GetNDF());
