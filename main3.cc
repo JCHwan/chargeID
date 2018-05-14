@@ -15,6 +15,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <TChain.h>
+
 
 #include "/nashome/c/chjang/duneND/ND280/ND280UpConst.hh"
 #include "/nashome/c/chjang/duneND/ND280/ND280UpRecoTrack.hh"
