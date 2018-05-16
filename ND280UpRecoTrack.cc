@@ -6,6 +6,8 @@
 #include <TCanvas.h>
 #include <TVector3.h>
 #include <TVector2.h>
+#include <TRandom3.h>
+
 
 #include "ND280UpConst.hh"
 #include "ND280UpRecoTrack.hh"
@@ -1496,34 +1498,55 @@ void ND280UpPID::ChargeID(TGraph g){
  
   TH1D hCentYY("hCentYY", "hCentYY", 1000, -120000, 120000);
   TH1D hCentZZ("hCentZZ", "hCentZZ", 1000, -80000 , 80000);
- 
+
+  TRandom3 trand;
+  
+  trand.Setseed(0);
+  
   //cout<<"nPoint: "<<g.GetN();
- 
-  for(int i = 0; 2*i < g.GetN(); i++){
-    if( (i % 3) == 0){
-      g.GetPoint(0, sPoint[0], sPoint[1]);
-      g.GetPoint(i, mPoint[0], mPoint[1]);
-      g.GetPoint(2*i, ePoint[0], ePoint[1]);
-      
-      if (ncenter > 0){
-	if(!fCenter(sPoint, mPoint, ePoint, center))
-	  continue;
-	hCentYY.Fill(center[1]);
-	hCentZZ.Fill(center[0]);
-      }
+
+  int nn = g.GetN();
+  int p3[3] = {0, 0, 0};
+  
+  for(int i = 0; i < 100; i++){
+    p3[0] = 0, p3[1] = 0, p3[2] = 0;
+    p3[0] = trand.Integer(nn);
+    bool same1 = false, same2 = false;
+    while(!same1){
+      p3[1] = trand.Integer(nn);
+      if (p3[0] != p3[1])
+	same1 = false; 
+    }
+    while(!same2){
+      p3[2] = trand.Integer(nn);
+      if (p3[0] != p3[2] &&p3[1] != p3[2])
+	same2 = false; 
+    }
+    
+    //    if( (i % 3) == 0){
+    g.GetPoint(p3[0], sPoint[0], sPoint[1]);
+    g.GetPoint(p3[1], mPoint[0], mPoint[1]);
+    g.GetPoint(p3[2], ePoint[0], ePoint[1]);
+    
+    if (ncenter > 0){
+      if(!fCenter(sPoint, mPoint, ePoint, center))
+	continue;
+      hCentYY.Fill(center[1]);
+      hCentZZ.Fill(center[0]);
+      //    }
     }
     ncenter++;
   }
-
-  g.GetPoint(6, ePoint[0], ePoint[1]);
+  
+  g.GetPoint(4, ePoint[0], ePoint[1]);
   g.GetPoint(0, sPoint[0], sPoint[1]);
   center[1] = hCentYY.GetBinCenter(hCentYY.GetMaximumBin());
   center[0] = hCentZZ.GetBinCenter(hCentZZ.GetMaximumBin());
-
+  
   TVector3 vRadius(0, sPoint[0] - center[0], sPoint[1] - center[1]);
   TVector3 vTrack(0, ePoint[0] - sPoint[0], ePoint[1] - sPoint[1]);
   TVector3 vCenter = vRadius.Cross(vTrack);
-
+  
   double R = vRadius.Mag();
   
   TF1 * fFit = NULL;
