@@ -1506,6 +1506,8 @@ void ND280UpPID::ChargeID(TGraph g){
   int nn = g.GetN();
   int p3[3] = {0, 0, 0};
   
+  //  cout<<"nPoint:"<<nn<<endl;
+
   for(int i = 0; i < 100; i++){
     p3[0] = 0, p3[1] = 0, p3[2] = 0;
     p3[0] = gRandom->Integer(nn);
@@ -1536,7 +1538,7 @@ void ND280UpPID::ChargeID(TGraph g){
     //ncenter++;
   }
   
-  g.GetPoint(4, ePoint[0], ePoint[1]);
+  g.GetPoint(6, ePoint[0], ePoint[1]);
   g.GetPoint(0, sPoint[0], sPoint[1]);
   center[1] = hCentYY.GetBinCenter(hCentYY.GetMaximumBin());
   center[0] = hCentZZ.GetBinCenter(hCentZZ.GetMaximumBin());

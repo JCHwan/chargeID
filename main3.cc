@@ -73,15 +73,17 @@ void main3(char* inputname)
     if((i+1)%(nevent/10) == 0)
       cout<<i+1<<"th event run"<<endl;
         chain->GetEntry(i);
+	gYZ->Set(0);
     double length = 0;
     nPoint = 0;
     bool l1 = false, l2 = false, l3 = false, l4 = false, l5 = false;
+    ND280UpPID nd280UpPID;
     for(auto sg : g4event->SegmentDetectors){
       //cout<<"aa"<<endl;
       for(int ii = 0; ii < sg.second.size();ii++){
-	length+=sg.second[ii].TrackLength;
 	//cout<<length<<endl;
 	if(sg.second[ii].TrackLength>=1){//&& sg.second[ii].EnergyDeposit >= 1.){
+	  length+=sg.second[ii].TrackLength;
 	  
 	  int aveX= ((sg.second[ii].Stop.X()+sg.second[ii].Start.X())/2. +1000)/10 ;
 	  int aveY= ((sg.second[ii].Stop.Y()+sg.second[ii].Start.Y())/2. +1000)/10 ;
@@ -103,7 +105,6 @@ void main3(char* inputname)
 	  //	gZY->SetPointError(nPoint, 5., 5.);
 	  nPoint++;
 	  if (!l1 && length > 500){
-	    ND280UpPID nd280UpPID;
 	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge500->Fill(nd280UpPID.GetChargeID());
 	    hRadius500->Fill(nd280UpPID.GetRadiusID());
@@ -112,7 +113,6 @@ void main3(char* inputname)
 	    l1 = true;
 	  }
 	  else if (!l2 && length > 1000){
-	    ND280UpPID nd280UpPID;
 	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge1000->Fill(nd280UpPID.GetChargeID());
 	    hRadius1000->Fill(nd280UpPID.GetRadiusID());
@@ -121,7 +121,6 @@ void main3(char* inputname)
 	    l2 = true;
 	  }
 	  else if (!l3 && length > 1500){
-	    ND280UpPID nd280UpPID;
 	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge1500->Fill(nd280UpPID.GetChargeID());
 	    hRadius1500->Fill(nd280UpPID.GetRadiusID());
@@ -130,7 +129,6 @@ void main3(char* inputname)
 	    l3 = true;
 	  }
 	  else if (!l4 && length > 2000){
-	    ND280UpPID nd280UpPID;
 	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge2000->Fill(nd280UpPID.GetChargeID());
 	    hRadius2000->Fill(nd280UpPID.GetRadiusID());
@@ -139,7 +137,6 @@ void main3(char* inputname)
 	    l4 = true;
 	  }
 	  else if (!l5 && length > 2500){
-	    ND280UpPID nd280UpPID;
 	    nd280UpPID.ChargeID(*gYZ);
 	    hCharge2500->Fill(nd280UpPID.GetChargeID());
 	    hRadius2500->Fill(nd280UpPID.GetRadiusID());
