@@ -1,0 +1,374 @@
+
+Processing main3.cc("3DST_2GeV_.7T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2GeV_.7T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2GeV_.7T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_.5GeV_.1T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_.5GeV_.1T") /* invoking function corresponding to '.x' */
+       ^
+3DST_.5GeV_.1T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_.5GeV_.2T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_.5GeV_.2T") /* invoking function corresponding to '.x' */
+       ^
+3DST_.5GeV_.2T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_.5GeV_.4T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_.5GeV_.4T") /* invoking function corresponding to '.x' */
+       ^
+3DST_.5GeV_.4T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_.5GeV_.7T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_.5GeV_.7T") /* invoking function corresponding to '.x' */
+       ^
+3DST_.5GeV_.7T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_1.5GeV_.1T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_1.5GeV_.1T") /* invoking function corresponding to '.x' */
+       ^
+3DST_1.5GeV_.1T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_1.5GeV_.2T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_1.5GeV_.2T") /* invoking function corresponding to '.x' */
+       ^
+3DST_1.5GeV_.2T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_1.5GeV_.4T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_1.5GeV_.4T") /* invoking function corresponding to '.x' */
+       ^
+3DST_1.5GeV_.4T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_1.5GeV_.7T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_1.5GeV_.7T") /* invoking function corresponding to '.x' */
+       ^
+3DST_1.5GeV_.7T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2.5GeV_.1T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2.5GeV_.1T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2.5GeV_.1T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2.5GeV_.2T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2.5GeV_.2T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2.5GeV_.2T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2.5GeV_.4T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2.5GeV_.4T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2.5GeV_.4T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2.5GeV_.7T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2.5GeV_.7T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2.5GeV_.7T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2GeV_.1T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2GeV_.1T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2GeV_.1T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2GeV_.2T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2GeV_.2T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2GeV_.2T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2GeV_.4T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2GeV_.4T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2GeV_.4T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run
+
+Processing main3.cc("3DST_2GeV_.7T")...
+In file included from input_line_8:1:
+In file included from /nashome/c/chjang/duneND/chargeID/./main3.cc:22:
+/nashome/c/chjang/duneND/chargeID/ND280UpRecoTrack.cc:1691:14: error: variable-sized object may not be initialized
+        double eign[NN*NN]={covar00, covar01, covar02, covar01, covar11, covar12,
+                    ^~~~~
+input_line_40:2:8: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+ main3("3DST_2GeV_.7T") /* invoking function corresponding to '.x' */
+       ^
+3DST_2GeV_.7T is running
+nevent = 3000
+300th event run
+600th event run
+900th event run
+1200th event run
+1500th event run
+1800th event run
+2100th event run
+2400th event run
+2700th event run
+3000th event run

@@ -31,6 +31,7 @@
 //int main(int argc, char* argv[])
 void main3(char* inputname)
 {
+  cout<<inputname<<" is running"<<endl;
   TG4Event * g4event = NULL;
   TChain * chain = new TChain("EDepSimEvents");
   chain->Add(Form("/pnfs/dune/persistent/users/chjang/data/%s.root", inputname));

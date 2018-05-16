@@ -1499,7 +1499,7 @@ void ND280UpPID::ChargeID(TGraph g){
   TH1D hCentYY("hCentYY", "hCentYY", 1000, -120000, 120000);
   TH1D hCentZZ("hCentZZ", "hCentZZ", 1000, -80000 , 80000);
 
-  gRandom->Setseed(0);
+  gRandom->SetSeed(0);
   
   //cout<<"nPoint: "<<g.GetN();
 
@@ -1509,13 +1509,13 @@ void ND280UpPID::ChargeID(TGraph g){
   for(int i = 0; i < 100; i++){
     p3[0] = 0, p3[1] = 0, p3[2] = 0;
     p3[0] = gRandom->Integer(nn);
-    bool same1 = false, same2 = false;
-    while(!same1){
+    bool same1 = true, same2 = true;
+    while(same1){
       p3[1] = gRandom->Integer(nn);
       if (p3[0] != p3[1])
 	same1 = false; 
     }
-    while(!same2){
+    while(same2){
       p3[2] = gRandom->Integer(nn);
       if (p3[0] != p3[2] &&p3[1] != p3[2])
 	same2 = false; 
@@ -1526,14 +1526,14 @@ void ND280UpPID::ChargeID(TGraph g){
     g.GetPoint(p3[1], mPoint[0], mPoint[1]);
     g.GetPoint(p3[2], ePoint[0], ePoint[1]);
     
-    if (ncenter > 0){
-      if(!fCenter(sPoint, mPoint, ePoint, center))
-	continue;
-      hCentYY.Fill(center[1]);
-      hCentZZ.Fill(center[0]);
-      //    }
-    }
-    ncenter++;
+    //    if (ncenter > 0){
+    if(!fCenter(sPoint, mPoint, ePoint, center))
+      continue;
+    hCentYY.Fill(center[1]);
+    hCentZZ.Fill(center[0]);
+    //    }
+    //  }
+    //ncenter++;
   }
   
   g.GetPoint(4, ePoint[0], ePoint[1]);
